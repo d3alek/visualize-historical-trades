@@ -23,21 +23,6 @@ if __name__ == '__main__':
         cyto.Cytoscape(
             id='cytoscape-compound',
             layout={'name': 'random'},
-            style={'width': '100%', 'height': '450px'},
-            stylesheet=[
-                {
-                    'selector': 'node',
-                    'style': {'content': 'data(label)'}
-                },
-                {
-                    'selector': '.countries',
-                    'style': {'width': 5}
-                },
-                {
-                    'selector': '.cities',
-                    'style': {'line-style': 'dashed'}
-                }
-            ],
             elements=nodes + edges,
         )
     ])
